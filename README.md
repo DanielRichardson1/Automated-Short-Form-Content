@@ -36,17 +36,22 @@ Make sure you have the following installed:
    git clone https://github.com/your-username/reddit-shortform-generator.git
    cd reddit-shortform-generator
    ```
-2. **Add your .env file**  
+2. **Install requirements with requirements.txt**
+    ```bash
+   pip install requirements.txt
+   ```
+3. **Add your .env file**
    Once you have the keys, create a .env file in the project root directory and add the following
    ```bash
-   CLIENT_ID=your_reddit_client_id
-   CLIENT_SECRET=your_reddit_client_secret
-   USER_AGENT=your_reddit_user_agent
+   OPENAI_API_KEY=your_openai_api_key
+   REDDIT_CLIENT_ID=your_reddit_client_id
+   REDDIT_CLIENT_SECRET=your_reddit_client_secret
+   REDDIT_CLIENT_USERNAME=your_reddit_user_name
+   REDDIT_CLIENT_PASSWORD=your_reddit_password
    ```
-3. **Run the script**  
+4.  **Run the script**  
    You can run the script to generate content with the top 3 posts from the last 24 hours
    ```bash
    python main.py
    ```
 
-Test
